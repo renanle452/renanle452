@@ -1,0 +1,13 @@
+{ 
+    super(clientID, subName, selector, durable, transactional, 
+      jndiCtxFactory, connFactory, providerURL, topicName); 
+  } 
+ 
+  public void handleMsg() 
+  throws CDSEventServiceSubscriberException 
+  { 
+    try 
+    { 
+      // simply prints the message 
+      TextMessage txtMsg = (TextMessage) getMessage(); 
+      System.out.println(txtMsg.getText()); 
