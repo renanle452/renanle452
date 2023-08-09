@@ -1,0 +1,8 @@
+ String subName, 
+    String selector, 
+    boolean durable, 
+    boolean transactional, 
+    String jndiCtxFactory, 
+    String connFactory, 
+    String providerURL, 
+    String topicName) 
