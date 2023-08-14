@@ -1,0 +1,5 @@
+  table_schema.createColumn( "item_no", Domain.INTEGER );
+        table_schema.createColumn( "prod_no", Domain.INTEGER );
+        table_schema.createColumn( "quantity", Domain.INTEGER );
+        table_schema.createColumn( "price", Domain.NUMERIC, 9, (short)2 );
+        index_schema = table_schema.createPrimaryIndex( "prime_keys" );
